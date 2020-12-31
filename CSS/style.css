@@ -1,0 +1,95 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+
+section{
+ height: 100vh;
+ background-color: rgb(213, 250, 218);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+ z-index: -1;
+}
+
+h1{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: blue;
+ font-size: 30px;
+ margin-top: 6px;
+ text-align: center;
+}
+
+p{
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ font-size: 25px;
+ margin: 10px  0;
+}
+.pads{
+ display: flex;
+ background-color: aqua;
+ height: 100px;
+ width: 100%;
+ z-index: 2;
+}
+
+/*Pads styling*/
+.pad1{
+ background-color: #a32cde;
+ flex: 1;
+}
+
+.pad2{
+ background-color: #b5acde;
+ flex: 1;
+}
+
+.pad3{
+ background-color: #fccccc;
+ flex: 1;
+}
+
+.pad4{
+ background-color: #fd11de;
+ flex: 1;
+}
+
+.pad5{
+ background-color: #ddae;
+ flex: 1;
+}
+
+.pad6{
+ background-color: #ef6;
+ flex: 1;
+}
+
+
+.visual> div{
+ position: absolute;
+ overflow: hidden;
+ height: 50px;
+ width: 50px;
+ bottom: 0;
+ border-radius: 50%;
+ z-index: 1;
+}
+
+@keyframes jump{
+ 0%{
+  left: 20%;
+  bottom: 0%;
+ }
+ 50%{
+  left: 50%;
+  bottom: 50%;
+ }
+ 100%{
+  left: 80%;
+  bottom: 0%;
+ }
+}
+
